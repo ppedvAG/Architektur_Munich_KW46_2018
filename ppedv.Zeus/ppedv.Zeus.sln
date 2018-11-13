@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Data.EF.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Logic", "ppedv.Zeus.Logic\ppedv.Zeus.Logic.csproj", "{F87AF403-BC7F-4782-BAD9-C8F640AF9546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.UI.RootConsole", "ppedv.Zeus.UI.RootConsole\ppedv.Zeus.UI.RootConsole.csproj", "{CC7C231F-94D3-48BD-B661-AE0A5D38D14D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F87AF403-BC7F-4782-BAD9-C8F640AF9546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F87AF403-BC7F-4782-BAD9-C8F640AF9546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F87AF403-BC7F-4782-BAD9-C8F640AF9546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC7C231F-94D3-48BD-B661-AE0A5D38D14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7C231F-94D3-48BD-B661-AE0A5D38D14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7C231F-94D3-48BD-B661-AE0A5D38D14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7C231F-94D3-48BD-B661-AE0A5D38D14D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
