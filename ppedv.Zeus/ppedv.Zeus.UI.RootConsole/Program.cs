@@ -1,10 +1,6 @@
 ﻿using ppedv.Zeus.Logic;
 using ppedv.Zeus.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ppedv.Zeus.UI.RootConsole
 {
