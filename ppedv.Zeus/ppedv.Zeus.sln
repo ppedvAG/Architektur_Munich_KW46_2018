@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Model", "ppedv.Z
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Data.EF", "ppedv.Zeus.Data.EF\ppedv.Zeus.Data.EF.csproj", "{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Data.EF.Tests", "ppedv.Zeus.Data.EF.Tests\ppedv.Zeus.Data.EF.Tests.csproj", "{D9DCE987-B3E1-41BE-8234-E6BEB5DEE1BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DCE987-B3E1-41BE-8234-E6BEB5DEE1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DCE987-B3E1-41BE-8234-E6BEB5DEE1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DCE987-B3E1-41BE-8234-E6BEB5DEE1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DCE987-B3E1-41BE-8234-E6BEB5DEE1BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
