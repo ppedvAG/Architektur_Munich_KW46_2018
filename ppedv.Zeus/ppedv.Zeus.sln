@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Model", "ppedv.Zeus.Model\ppedv.Zeus.Model.csproj", "{5C44155D-C064-43D1-95BC-EDAD7C0C0645}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {514CF5AC-5651-40F2-B67E-52F7C7239AA3}
+	EndGlobalSection
+EndGlobal
