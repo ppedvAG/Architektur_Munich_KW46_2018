@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Model", "ppedv.Zeus.Model\ppedv.Zeus.Model.csproj", "{5C44155D-C064-43D1-95BC-EDAD7C0C0645}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Zeus.Data.EF", "ppedv.Zeus.Data.EF\ppedv.Zeus.Data.EF.csproj", "{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C44155D-C064-43D1-95BC-EDAD7C0C0645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F039BF3C-9C62-4AC0-801E-A9F2FBC95F56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
