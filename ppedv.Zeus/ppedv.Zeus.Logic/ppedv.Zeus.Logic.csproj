@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ppedv.Zeus.Data.EF\ppedv.Zeus.Data.EF.csproj" />
+    <ProjectReference Include="..\ppedv.Zeus.Model\ppedv.Zeus.Model.csproj" />
+  </ItemGroup>
+
+</Project>
