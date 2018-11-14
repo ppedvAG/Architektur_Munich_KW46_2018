@@ -12,7 +12,7 @@ namespace ppedv.Zeus.UI.RootConsole
 
             var core = new Core();
 
-            //core.CreateDemodaten();
+            core.CreateDemodaten();
 
 
             foreach (var d in core.Repository.GetAll<Drucker>())

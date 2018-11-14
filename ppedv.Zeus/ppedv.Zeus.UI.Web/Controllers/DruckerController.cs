@@ -1,9 +1,11 @@
 ﻿using ppedv.Zeus.Logic;
 using ppedv.Zeus.Model;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace ppedv.Zeus.UI.Web.Controllers
 {
+
     public class DruckerController : Controller
     {
         Core core = new Core();
@@ -11,14 +13,22 @@ namespace ppedv.Zeus.UI.Web.Controllers
         // GET: Drucker
         public ActionResult Index()
         {
-            var result = core.Repository.GetAll<Drucker>();
-            return View(result);
+            return View(core.Drucker);
         }
 
         // GET: Drucker/Details/5
         public ActionResult Details(int id)
         {
             return View(core.Repository.GetById<Drucker>(id));
+        }
+
+        public ActionResult StartPrinter(int id)
+        {
+            var dd = core.Drucker.FirstOrDefault(x => x.Key.Id == id).Value;
+            if (dd != null)
+                dd.Start("lalalala");
+
+            return RedirectToAction("Index");
         }
 
         // GET: Drucker/Create

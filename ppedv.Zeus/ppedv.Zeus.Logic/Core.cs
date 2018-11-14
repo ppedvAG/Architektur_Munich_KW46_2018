@@ -1,6 +1,8 @@
-﻿using ppedv.Zeus.Model;
+﻿using ppedv.Zeus.Data.AnetA8;
+using ppedv.Zeus.Model;
 using ppedv.Zeus.Model.Contracts;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ppedv.Zeus.Logic
@@ -9,9 +11,22 @@ namespace ppedv.Zeus.Logic
     {
         public IRepository Repository { get; private set; }
 
+        public Dictionary<Drucker, I3dDrucker> Drucker { get; private set; }
+
         public Core(IRepository repository)
         {
             this.Repository = repository;
+            InitDrucker();
+        }
+
+        private void InitDrucker()
+        {
+            Drucker = new Dictionary<Drucker, I3dDrucker>();
+            foreach (var d in Repository.GetAll<Drucker>())
+            {
+                //if(d.Hersteller=="Anet")
+                Drucker.Add(d, new Data.AnetA8.Anet());
+            }
         }
 
         public Core() : this(new Data.EF.EfRepository())

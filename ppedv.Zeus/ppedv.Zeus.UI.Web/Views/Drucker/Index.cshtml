@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ppedv.Zeus.Model.Drucker>
+﻿@model IDictionary<ppedv.Zeus.Model.Drucker, ppedv.Zeus.Model.I3dDrucker>
 
 @{
     ViewBag.Title = "Index";
@@ -13,25 +13,28 @@
     <tr>
 
         <th>
-            @Html.DisplayNameFor(model => model.Hersteller)
+            Hersteller
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Model)
+         Model
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MaxX)
+            MaxX
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MaxY)
+            MaxY
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MaxZ)
+         MaxZ
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Schnittstelle)
+           Schnittstelle
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Speed)
+          Speed
+        </th>
+        <th>
+            Status
         </th>
         <th></th>
     </tr>
@@ -39,30 +42,35 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Hersteller)
+            @Html.DisplayFor(modelItem => item.Key.Hersteller)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Model)
+            @Html.DisplayFor(modelItem => item.Key.Model)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MaxX)
+            @Html.DisplayFor(modelItem => item.Key.MaxX)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MaxY)
+            @Html.DisplayFor(modelItem => item.Key.MaxY)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MaxZ)
+            @Html.DisplayFor(modelItem => item.Key.MaxZ)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Schnittstelle)
+            @Html.DisplayFor(modelItem => item.Key.Schnittstelle)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Speed)
+            @Html.DisplayFor(modelItem => item.Key.Speed)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @item.Value.Status
+            @Html.ActionLink("Start", "StartPrinter", new { id = item.Key.Id }) |
+
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Key.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Key.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Key.Id })
         </td>
     </tr>
 }

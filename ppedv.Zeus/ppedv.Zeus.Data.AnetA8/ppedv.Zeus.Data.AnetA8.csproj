@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ppedv.Zeus.Data.AnetA8\ppedv.Zeus.Data.AnetA8.csproj" />
-    <ProjectReference Include="..\ppedv.Zeus.Data.EF\ppedv.Zeus.Data.EF.csproj" />
+    <ProjectReference Include="..\Anet.A8\Anet.A8.csproj" />
     <ProjectReference Include="..\ppedv.Zeus.Model\ppedv.Zeus.Model.csproj" />
   </ItemGroup>
 
