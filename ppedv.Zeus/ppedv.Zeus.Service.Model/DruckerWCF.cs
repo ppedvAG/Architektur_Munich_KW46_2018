@@ -1,9 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ppedv.Zeus.Model
+namespace ppedv.Zeus.Service.Model
 {
-    public class Drucker : Entity
+    public class DruckerWCF
     {
+        public int Id { get; set; }
+
         public string Hersteller { get; set; }
         public string Model { get; set; }
         public int MaxX { get; set; }
@@ -12,6 +18,6 @@ namespace ppedv.Zeus.Model
         public string Schnittstelle { get; set; }
         public double Speed { get; set; }
 
-        public virtual IEnumerable<Auftrag> Auftraege { get; set; } = new List<Auftrag>();
+
     }
 }
