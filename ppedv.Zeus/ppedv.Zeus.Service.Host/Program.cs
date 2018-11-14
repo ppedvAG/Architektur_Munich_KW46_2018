@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace ppedv.Zeus.Service.Host
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static ServiceHost host = new ServiceHost(typeof(WebService));
+        public static void Main(string[] args)
         {
             Console.WriteLine("*** WCF HOST ***");
 
-            var host = new ServiceHost(typeof(WebService));
+            host = new ServiceHost(typeof(WebService));
             var bind = new NetTcpBinding();
             bind.Security.Mode = SecurityMode.None;
             host.AddServiceEndpoint(typeof(IService), bind, "net.tcp://localhost:1");

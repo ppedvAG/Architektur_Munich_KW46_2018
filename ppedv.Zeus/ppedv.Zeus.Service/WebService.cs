@@ -4,7 +4,9 @@ using ppedv.Zeus.Model;
 using ppedv.Zeus.Service.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,9 +15,16 @@ namespace ppedv.Zeus.Service
     public class WebService : IService
     {
 
+        public WebService()
+        {
+            Trace.Listeners.Add(new EventLogTraceListener("Application"));
+        }
+
         Core core = new Core();
         public void AddDrucker(DruckerWCF drucker)
         {
+            var op = OperationContext.Current;
+            Trace.WriteLine($"{op.Channel.RemoteAddress} Add drucker {drucker.Hersteller}");
             core.Repository.Add(Mapper.Map<Drucker>(drucker));
             core.Repository.Save();
         }
