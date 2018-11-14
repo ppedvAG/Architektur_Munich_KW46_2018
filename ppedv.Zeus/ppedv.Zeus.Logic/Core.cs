@@ -1,6 +1,7 @@
 ﻿using ppedv.Zeus.Model;
 using ppedv.Zeus.Model.Contracts;
 using System;
+using System.Linq;
 
 namespace ppedv.Zeus.Logic
 {
@@ -15,6 +16,11 @@ namespace ppedv.Zeus.Logic
 
         public Core() : this(new Data.EF.EfRepository())
         { }
+
+        public Drucker GetDruckerWithLargestVolume()
+        {
+            return Repository.GetAll<Drucker>().OrderByDescending(x => x.MaxX * x.MaxY * x.MaxZ).ThenBy(x => x.Created).FirstOrDefault();
+        }
 
         public void CreateDemodaten()
         {
